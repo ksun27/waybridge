@@ -18,7 +18,7 @@ data['average'] = data.rolling('600s').mean()
 data['average'].loc[data.index < pd.Timestamp(1970, 1, 1, 0, 10)] = None
 data.index = (data.index - dt.datetime(1970,1,1)).total_seconds()
 
-values = (data['average'].max(), data['value'].tolist(), data.index.tolist())
+values = (data['average'].max(), max(data.index.tolist()), data['value'].max())
 
 colors = ['lightblue','darkorange']
 data.plot(color=colors, linewidth=3, figsize=(12,6))

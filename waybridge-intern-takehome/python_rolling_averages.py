@@ -60,7 +60,7 @@ def calculate_rolling_average(time_array, input_array, averaging_period=600):
         rolling_averages.append(average)
         total = 0
         i += 1
-    return (max(rolling_averages), time_array, input_array)
+    return (max(rolling_averages), max(time_array), max(input_array))
 
 time_array, input_array = load_csv()
 result = calculate_rolling_average(time_array, input_array, 600)
