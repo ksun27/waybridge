@@ -10,7 +10,7 @@ Both parts have a jupyter notebook file and a python file. For better viewing ex
 
 Some comments about the assessment:
 
-- The rolling averages differ by a slight amount. I am unsure on what is causing this difference, however I believe the difference is negligible. 
+- For the two solutions, the rolling averages differ by a slight amount. I am unsure on what is causing this difference, however I believe the difference is negligible. 
 - For calculate_rolling_average (returns tuple: Max value of avgs, times, values), I was confused on what was meant by times and values, so I simply added the max time and max value into the tuple.
 - For both solutions, I did a window of 600 seconds
 - For Pandas: To solve for a given rolling average at a certain point, simply just index into the column at the time and find the average.
